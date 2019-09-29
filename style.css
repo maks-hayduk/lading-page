@@ -1,0 +1,9 @@
+.bg-image {
+  background: url('img/bg.jpg') center center no-repeat;
+  height: 400px;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
