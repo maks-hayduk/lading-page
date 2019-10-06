@@ -8,34 +8,39 @@
     <link rel="stylesheet" href="style.css"> </head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Business card</a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="header">
+    <a class="navbar-brand mr-5" id="nav-barber-button">BARBERSHOP co</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse ml-4" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="#">General Information</a>
+        <a class="nav-item nav-link active" href="#" id="general-info-button">General Information</a>
         <a class="nav-item nav-link active" href="#">Portfolio</a>
         <a class="nav-item nav-link active" href="#">Contact us</a>
       </div>
     </div>
   </nav>
   
-  <div class="text-left bg-image">
-    <div class="card-body">
-      <h5 class="card-title">Special title treatment</h5>
-      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      <a href="#" class="btn btn-primary" onclick="">Go somewhere</a>
+  <div class="text-center" id="bg">
+    <div class="card-body text-center">
+      <h5 class="card-title">BARBERSHOP co</h5>
+      <p class="card-text">Best of the best barbershop in the world.</p>
+      <a href="#" class="btn btn-danger" onclick="">Get to know more</a>
     </div>
   </div>
+
+  <div id="general-info-block">
+    <h4 class="title">About us</h4>
+    <p class="info-text">Wooden Beavers is a construction company located in Utah. We specialize in wooden constructions made from the ground up. We only use the best materials for our work. All projects are developed using old school carpentry methods.</p>
+  </div>
+
   <div class="card-footer text-muted text-center">
     Made by Maks Hayduk
   </div>
 
 
-
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="index.js"></script>
