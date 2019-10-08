@@ -12,9 +12,8 @@
   align-items: center;
 }
 
-.main-block {
-  width: 100vh;
-  height: 500px;
+#bg-text {
+  opacity: 0;
 }
 
 .card-title {
@@ -29,11 +28,11 @@
 }
 
 #general-info-block {
-  height: 100vh;
+  min-height: 200px;
   width: 70%;
   margin: 0 auto;
-  margin-top: 60px;
-  opacity: 0;
+  padding: 60px 0;
+  margin-bottom: 20px;
 }
 
 .title {
@@ -51,14 +50,59 @@
   width: 50%;
 }
 
-@media screen and (max-width: 768px) {
+.row {
+  margin-top: 60px;
 }
 
-@media screen and (max-width: 420px) {
+#col-img-1 {
+  background: url("img/barbershop.png") center center no-repeat;
+  background-size: contain;
+  margin-top: 10%;
+  margin-left: 20%;
+  width: 80%;
+  height: 80%;
+  opacity: 0;
+}
+
+#first-info {
+  margin-left: -100px;
+  opacity: 0;
+}
+
+#col-img-2 {
+  background: url("img/scissors.png") center center no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+#second-info {
+  margin-left: 100px;
+  opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+  #general-info-block {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
   .card-title {
     font-size: 30px;
   }
+
   #general-info-block {
     width: 80%;
+  }
+
+  .col {
+    display: none;
+  }
+
+  .col-7 {
+    max-width: 100% !important;
+    flex: none !important;
   }
 }
