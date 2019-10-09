@@ -5,19 +5,19 @@ const navbarScroll = (scrollTop) => {
 }
 
 $(document).ready(() => {
+  $(this).scrollTop(0);
+});
+
+$(document).ready(() => {
   $('#bg').animate({height: `1000px`}, 1500);
   $('#bg-text').animate({opacity: 1}, 1000);
-  
-  $('html, body').animate({
-    scrollTop: 0
-  }, 0);
 });
 
-$("#general-info-button").click(() => {
-  navbarScroll($("#general-info-block").offset().top - 56);
+$('#general-info-button').click(() => {
+  navbarScroll($('#general-info-block').offset().top - 56);
 });
 
-$("#nav-barber-button").click(() => {
+$('#nav-barber-button').click(() => {
   navbarScroll(0);
 });
 
@@ -31,24 +31,33 @@ $(window).scroll(() => {
   if (scrollTop > $('#general-info-block').offset().top/2 && $('#bg').height() > $('#bg').height()/2) { 
     $('#general-info-block').animate({opacity: 1}, 1000);
 
-    $("#first-info").animate({
+    $('#first-info').animate({
       opacity: 1,
-      left: "100px"
+      left: '100px'
     }, 2000);
 
-    $("#col-img-1").animate({
+    $('#col-img-1').animate({
       opacity: 1
     }, 1000)
 
     setTimeout(() => {
-      $("#second-info").animate({
+      $('#second-info').animate({
         opacity: 1,
-        left: "-100px"
+        left: '-100px'
       }, 2000);
   
-      $("#col-img-2").animate({
+      $('#col-img-2').animate({
         opacity: 1
       }, 1000)
     }, 1000)
+  }
+
+  if (scrollTop > $('#second-info').offset().top - 100) {
+    for (let i = 1; i <=4; i++) {
+      $(`#card-price-${i}`).animate({
+        opacity: 1,
+        top: '-10px'
+      }, 1000*i)
+    }
   }
 });
