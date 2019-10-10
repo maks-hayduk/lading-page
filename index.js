@@ -23,7 +23,7 @@ $('#nav-barber-button').click(() => {
 
 $(window).scroll(() => {
   let scrollTop = $(window).scrollTop();
-
+  
   if (scrollTop > $('#bg').height()/4) {
     $('#header').animate({opacity: `1`}, 1500)
   }
@@ -33,7 +33,7 @@ $(window).scroll(() => {
 
     $('#first-info').animate({
       opacity: 1,
-      left: '100px'
+      right: '0px'
     }, 2000);
 
     $('#col-img-1').animate({
@@ -43,7 +43,7 @@ $(window).scroll(() => {
     setTimeout(() => {
       $('#second-info').animate({
         opacity: 1,
-        left: '-100px'
+        left: '0px'
       }, 2000);
   
       $('#col-img-2').animate({

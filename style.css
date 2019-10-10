@@ -71,8 +71,9 @@
 #first-info {
   width: 70%;
   max-width: 500px;
-  margin-right: 100px;
   opacity: 0;
+  position: relative;
+  right: 100px;
 }
 
 #col-img-2 {
@@ -86,8 +87,9 @@
 #second-info {
   width: 70%;
   max-width: 500px;
-  margin-left: 100px;
   opacity: 0;
+  position: relative;
+  left: 100px;
 }
 
 #cuts-prices {
@@ -154,12 +156,12 @@
 }
 
 @media screen and (max-width: 500px) {
-  .card-title {
+  .site-title {
     font-size: 30px;
   }
 
-  #general-info-block {
-    width: 80%;
+  #general-info-block, #cuts-prices {
+    width: 90%;
   }
 
   .col-7 {
