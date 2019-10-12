@@ -1,3 +1,17 @@
+for(let i = 1; i < 9; i++) {
+  let imageDiv = document.createElement('div');
+  imageDiv.style.backgroundImage = `url(img/hair-${i}.jpg)`;
+  imageDiv.style.opacity = 0;
+  imageDiv.className = 'portfolio-img';
+  imageDiv.id = `portfolio-img-${i}`;
+
+  let parentDiv = document.createElement('div');
+  parentDiv.className = 'parent-portfolio-image';
+  parentDiv.appendChild(imageDiv);
+
+  document.getElementById('portfolio').appendChild(parentDiv);
+}
+
 const navbarScroll = (scrollTop) => {
   $('html, body').animate({
     scrollTop: scrollTop
@@ -14,11 +28,19 @@ $(document).ready(() => {
 });
 
 $('#general-info-button').click(() => {
-  navbarScroll($('#general-info-block').offset().top - 56);
+  navbarScroll($('#general-info-block').offset().top - 200);
 });
 
 $('#nav-barber-button').click(() => {
   navbarScroll(0);
+});
+
+$('#portfolio-button').click(() => {
+  navbarScroll($('#portfolio').offset().top - 200);
+});
+
+$('#contact-us-button').click(() => {
+  navbarScroll($('#contact-us').offset().top - 200);
 });
 
 $(window).scroll(() => {
@@ -58,6 +80,14 @@ $(window).scroll(() => {
         opacity: 1,
         top: '-10px'
       }, 1000*i)
+    }
+  }
+
+  if (scrollTop > $('#card-price-3').offset().top - 100) {
+    for (let i = 1; i < 9; i++) {
+      $(`#portfolio-img-${i}`).animate({
+        opacity: 1
+      }, 1000*(i/2))
     }
   }
 });

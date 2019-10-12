@@ -2,26 +2,29 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css"> </head>
-    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>BARBERco</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+</head>
+
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light" id="header">
     <a class="navbar-brand mr-5" id="nav-barber-button">BARBERSHOP co</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse ml-4" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-item nav-link active" href="#" id="general-info-button">General Information</a>
-        <a class="nav-item nav-link active" href="#">Portfolio</a>
-        <a class="nav-item nav-link active" href="#">Contact us</a>
+        <a class="nav-item nav-link active" href="#" id="portfolio-button">Portfolio</a>
+        <a class="nav-item nav-link active" href="#" id="contact-us-button">Contact us</a>
       </div>
     </div>
   </nav>
-  
+
   <div class="text-center" id="bg">
     <div class="card-body text-center" id="bg-text">
       <h5 class="site-title">BARBERSHOP co</h5>
@@ -35,7 +38,9 @@
       <div class="container-content">
         <div id="first-info">
           <h4 class="title">About us</h4>
-          <p class="info-text">BARBERSHOP co is a barbershop located in Ukraine. We specialize in wooden constructions made from the ground up. We only use the best materials for our work. All projects are developed using old school carpentry methods.</p>
+          <p class="info-text">BARBERSHOP co is a barbershop located in Ukraine. We specialize in wooden constructions
+            made from the ground up. We only use the best materials for our work. All projects are developed using old
+            school carpentry methods.</p>
         </div>
         <div class="img-del-media">
           <div id="col-img-1"></div>
@@ -48,7 +53,9 @@
         </div>
         <div id="second-info">
           <h4 class="title">Brief info</h4>
-          <p class="info-text">We provide clean and professional cut depending on an event you are going to. Our professionals are highly specialized in barber shop sphere so we will make everything as cool and as fast as possible.</p>
+          <p class="info-text">We provide clean and professional cut depending on an event you are going to. Our
+            professionals are highly specialized in barber shop sphere so we will make everything as cool and as fast as
+            possible.</p>
         </div>
       </div>
     </div>
@@ -61,33 +68,87 @@
       <div id="cuts-prices-img-1"></div>
       <div class="card-body">
         <h1 class="card-title">Uppercut</h1>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
       </div>
     </div>
     <div class="card" id="card-price-2">
       <div id="cuts-prices-img-2"></div>
       <div class="card-body">
         <h1 class="card-title">Beardcut</h1>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
       </div>
     </div>
     <div class="card" id="card-price-3">
-        <div id="cuts-prices-img-3"></div>
-        <div class="card-body">
-          <h1 class="card-title">Uppercut&beardcut</h1>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
+      <div id="cuts-prices-img-3"></div>
+      <div class="card-body">
+        <h1 class="card-title">Uppercut&beardcut</h1>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
       </div>
-      <div class="card" id="card-price-4">
-          <div id="cuts-prices-img-4"></div>
-          <div class="card-body">
-            <h1 class="card-title">Father&son*</h1>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
+    </div>
+    <!-- <div class="card" id="card-price-4">
+      <div id="cuts-prices-img-4"></div>
+      <div class="card-body">
+        <h1 class="card-title">Father&son*</h1>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+      </div>
+    </div> -->
   </div>
 
   <hr style="width:80%">
+
+  <div id="portfolio"></div>
+
+  <hr style="width:80%">
+
+  <div class="mb-4" id="contact-us">
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us
+      directly. Our team will come back to you within
+      a matter of hours to help you.</p>
+
+    <div class="row">
+      <div class="col-md-9 mb-md-0 mb-5">
+        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="md-form mb-2">
+                <label for="name" class="">Your name</label>
+                <input type="text" id="name" name="name" class="form-control" autocomplete="off">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="md-form mb-2">
+                <label for="email" class="">Your email</label>
+                <input type="text" id="email" name="email" class="form-control" autocomplete="off">
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="text-center mt-4">
+          <a class="btn btn-danger send-button">Send</a>
+        </div>
+        <div class="status"></div>
+      </div>
+      <div class="col-md-3 text-center">
+        <ul class="list-unstyled mb-0">
+          <li><i class="fas fa-map-marker-alt fa-2x"></i>
+            <p>San Francisco, CA 94126, USA</p>
+          </li>
+
+          <li><i class="fas fa-phone mt-4 fa-2x"></i>
+            <p>+ 01 234 567 89</p>
+          </li>
+          <li><i class="fas fa-map-marker-alt fa-2x"></i>
+            <p>barberco@gmail.com</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
   <div class="card-footer text-muted text-center">
     Made with ❤️ by Maks Hayduk
