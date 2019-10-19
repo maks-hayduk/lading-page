@@ -83,7 +83,7 @@ $(window).scroll(() => {
     }
   }
 
-  if (scrollTop > $('#card-price-3').offset().top - 100) {
+  if (scrollTop > $('#cuts-prices').offset().top + 200) {
     for (let i = 1; i < 9; i++) {
       $(`#portfolio-img-${i}`).animate({
         opacity: 1
