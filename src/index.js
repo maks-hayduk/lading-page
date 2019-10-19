@@ -1,6 +1,6 @@
 for(let i = 1; i < 9; i++) {
   let imageDiv = document.createElement('div');
-  imageDiv.style.backgroundImage = `url(img/hair-${i}.jpg)`;
+  imageDiv.style.backgroundImage = `url(../img/hair-${i}.jpg)`;
   imageDiv.style.opacity = 0;
   imageDiv.className = 'portfolio-img';
   imageDiv.id = `portfolio-img-${i}`;
