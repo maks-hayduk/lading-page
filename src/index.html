@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>BARBERco</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="header">
+    <a class="navbar-brand mr-5" id="nav-barber-button">BARBERSHOP co</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse ml-4" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="#" id="general-info-button">General Information</a>
+        <a class="nav-item nav-link active" href="#" id="portfolio-button">Portfolio</a>
+        <a class="nav-item nav-link active" href="#" id="contact-us-button">Contact us</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="text-center" id="bg">
+    <div class="card-body text-center" id="bg-text">
+      <h5 class="site-title">BARBERSHOP co</h5>
+      <p class="card-text">Best of the best barbershop in the world.</p>
+      <a href="#" class="btn btn-danger" onclick="">Get to know more</a>
+    </div>
+  </div>
+
+  <div id="general-info-block">
+    <div class="container">
+      <div class="container-content">
+        <div id="first-info">
+          <h4 class="title">About us</h4>
+          <p class="info-text">BARBERSHOP co is a barbershop located in San Francisco. We specialize in good hair&beard cuts
+             Our professionals are highly specialized in barber shop sphere so we will make everything as cool and as fast as
+            possible.
+          </p>
+        </div>
+        <div class="img-del-media">
+          <div id="col-img-1"></div>
+        </div>
+      </div>
+
+      <div class="container-content">
+        <div class="img-del-media">
+          <div id="col-img-2"></div>
+        </div>
+        <div id="second-info">
+          <h4 class="title">Brief info</h4>
+          <p class="info-text">We provide clean and professional cut depending on an event you are going to.
+              Prices for services may vary depending on who will perform the work. But be sure, whether it be performed by a 
+              master or a junior master, the work will be done qualitatively! The difference is only in time.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr style="width:80%">
+
+  <div id="cuts-prices">
+    <div class="card" id="card-price-1">
+      <div id="cuts-prices-img-1"></div>
+      <div class="card-body">
+        <h1 class="card-title">Haircut</h1>
+        <p class="card-text">Includes a wash for men with specially designed soap-shampoo for men, which helps to restore and revitalize the scalp.
+            Haircut and styling with quality tools.</p>
+      </div>
+    </div>
+    <div class="card" id="card-price-2">
+      <div id="cuts-prices-img-2"></div>
+      <div class="card-body">
+        <h1 class="card-title">Beardcut</h1>
+        <p class="card-text">Selection of the form taking into account the geometry of the face.
+            The contour is a dangerous razor. Laying with balms and oils.</p>
+      </div>
+    </div>
+    <div class="card" id="card-price-3">
+      <div id="cuts-prices-img-3"></div>
+      <div class="card-body">
+        <h1 class="card-title">Haircut&Beardcut</h1>
+        <p class="card-text">Includes individual haircut and beard or shave haircut.</p>
+      </div>
+    </div>
+    <div class="card" id="card-price-4">
+      <div id="cuts-prices-img-4"></div>
+      <div class="card-body">
+        <h1 class="card-title">Father&son*</h1>
+        <p class="card-text">Cutting father and son consistently into one master.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr style="width:80%">
+
+  <div id="portfolio"></div>
+
+  <hr style="width:80%">
+
+  <div class="mb-4" id="contact-us">
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+    <p class="text-center w-responsive mx-auto mb-5">You can quickly find out when and what kind of master is free to enroll in the BARBERSHOPco at a convenient time for you.</p>
+
+    <div class="row">
+      <div class="col-md-9 mb-md-0 mb-5">
+        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="md-form mb-2">
+                <label for="name" class="">Your name</label>
+                <input type="text" id="name" name="name" class="form-control" autocomplete="off">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="md-form mb-2">
+                <label for="email" class="">Your email</label>
+                <input type="text" id="email" name="email" class="form-control" autocomplete="off">
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="text-center mt-4">
+          <a class="btn btn-danger send-button">Send</a>
+        </div>
+        <div class="status"></div>
+      </div>
+      <div class="col-md-3 text-center">
+        <ul class="list-unstyled mb-0">
+          <li><i class="fas fa-map-marker-alt fa-2x"></i>
+            <p>San Francisco, CA 94126, USA</p>
+          </li>
+
+          <li><i class="fas fa-phone mt-4 fa-2x"></i>
+            <p>+ 01 234 567 89</p>
+          </li>
+          <li><i class="fas fa-map-marker-alt fa-2x"></i>
+            <p>barberco@gmail.com</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-footer text-muted text-center">
+    Made with ❤️ by Maks Hayduk
+  </div>
+
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
